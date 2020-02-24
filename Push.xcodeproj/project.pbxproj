@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,8 @@
 		826EAAD324036A7A008F31B5 /* PushScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushScreenCoordinator.swift; sourceTree = "<group>"; };
 		826EAAD524036A80008F31B5 /* PushScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushScreenView.swift; sourceTree = "<group>"; };
 		826EAAD724036A87008F31B5 /* PushScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushScreenViewModel.swift; sourceTree = "<group>"; };
+		826EAAD924038888008F31B5 /* Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Push.entitlements; sourceTree = "<group>"; };
+		826EAADA24038888008F31B5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		DB07924B6002613480C62BB6 /* Pods-Push.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push.release.xcconfig"; path = "Target Support Files/Pods-Push/Pods-Push.release.xcconfig"; sourceTree = "<group>"; };
 		ED5D1D2893F3C825F6574703 /* Pods-Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push.debug.xcconfig"; path = "Target Support Files/Pods-Push/Pods-Push.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +51,7 @@
 		802972BD142CCD4295201DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				826EAADA24038888008F31B5 /* HealthKit.framework */,
 				475554282DC8EF0F654693BE /* libPods-Push.a */,
 			);
 			name = Frameworks;
@@ -75,6 +78,7 @@
 		826EAABA2403669B008F31B5 /* Push */ = {
 			isa = PBXGroup;
 			children = (
+				826EAAD924038888008F31B5 /* Push.entitlements */,
 				826EAACF24036A42008F31B5 /* modules */,
 				826EAABB2403669B008F31B5 /* AppDelegate.swift */,
 				826EAABD2403669B008F31B5 /* SceneDelegate.swift */,
@@ -351,14 +355,15 @@
 			baseConfigurationReference = ED5D1D2893F3C825F6574703 /* Pods-Push.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Push/Push.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4Z8ZRF9X;
+				DEVELOPMENT_TEAM = DV97Z43DCT;
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mhlee.Push;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wiwa.push-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,14 +375,15 @@
 			baseConfigurationReference = DB07924B6002613480C62BB6 /* Pods-Push.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Push/Push.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4Z8ZRF9X;
+				DEVELOPMENT_TEAM = DV97Z43DCT;
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mhlee.Push;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wiwa.push-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
