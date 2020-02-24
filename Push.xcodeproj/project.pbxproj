@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DFCD3919D06CD55517B35CF /* Pods_Push.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481A5B2D20E7ED74A59EB76A /* Pods_Push.framework */; };
 		826EAABC2403669B008F31B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAABB2403669B008F31B5 /* AppDelegate.swift */; };
 		826EAABE2403669B008F31B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAABD2403669B008F31B5 /* SceneDelegate.swift */; };
 		826EAAC52403669D008F31B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 826EAAC42403669D008F31B5 /* Assets.xcassets */; };
@@ -15,11 +16,10 @@
 		826EAAD424036A7A008F31B5 /* PushScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAAD324036A7A008F31B5 /* PushScreenCoordinator.swift */; };
 		826EAAD624036A80008F31B5 /* PushScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAAD524036A80008F31B5 /* PushScreenView.swift */; };
 		826EAAD824036A87008F31B5 /* PushScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAAD724036A87008F31B5 /* PushScreenViewModel.swift */; };
-		F8CB18BAF85296797A279B43 /* libPods-Push.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 475554282DC8EF0F654693BE /* libPods-Push.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		475554282DC8EF0F654693BE /* libPods-Push.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Push.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		481A5B2D20E7ED74A59EB76A /* Pods_Push.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		826EAAB82403669B008F31B5 /* Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		826EAABB2403669B008F31B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		826EAABD2403669B008F31B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CB18BAF85296797A279B43 /* libPods-Push.a in Frameworks */,
+				3DFCD3919D06CD55517B35CF /* Pods_Push.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				826EAADA24038888008F31B5 /* HealthKit.framework */,
-				475554282DC8EF0F654693BE /* libPods-Push.a */,
+				481A5B2D20E7ED74A59EB76A /* Pods_Push.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +128,7 @@
 				826EAAB42403669B008F31B5 /* Sources */,
 				826EAAB52403669B008F31B5 /* Frameworks */,
 				826EAAB62403669B008F31B5 /* Resources */,
+				67550135F9C92719DFC77460 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +185,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		67550135F9C92719DFC77460 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Push/Pods-Push-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Push/Pods-Push-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Push/Pods-Push-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8E4F9B88CE3E67B3E8DD8FDB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
