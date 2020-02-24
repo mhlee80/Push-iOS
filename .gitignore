@@ -1,0 +1,6 @@
+xcuserdata/
+Pods/
+.DS_Store
+Push.app.dSYM.zip
+Push.ipa
+Push.xcodeproj/xcuserdata/
