@@ -20,4 +20,7 @@ protocol PushScreenViewProtocol {
 protocol PushScreenViewModelProtocol {
   var messages: PublishSubject<[String]> { get }
   func viewDidLoad()
+  
+  func requestNotificationAuthorization()
+  func registerRemoteNotification()
 }

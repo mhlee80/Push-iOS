@@ -16,4 +16,17 @@ class PushScreenViewModel: NSObject, PushScreenViewModelProtocol {
   func viewDidLoad() {
     log.info("")
   }
+  
+  func requestNotificationAuthorization() {
+    PushService.shared.requestNotificationAuthorization { granted, error in
+      log.info("granted: \(granted)")
+      if let error = error {
+        log.info(error)
+      }
+    }
+  }
+  
+  func registerRemoteNotification() {
+    PushService.shared.registerForRemoteNotification()
+  }
 }

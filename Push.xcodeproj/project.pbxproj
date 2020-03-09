@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		826EAAD424036A7A008F31B5 /* PushScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAAD324036A7A008F31B5 /* PushScreenCoordinator.swift */; };
 		826EAAD624036A80008F31B5 /* PushScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAAD524036A80008F31B5 /* PushScreenView.swift */; };
 		826EAAD824036A87008F31B5 /* PushScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EAAD724036A87008F31B5 /* PushScreenViewModel.swift */; };
+		82BF26A02415D21100A9C78B /* PushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF269F2415D21100A9C78B /* PushService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		826EAAD724036A87008F31B5 /* PushScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushScreenViewModel.swift; sourceTree = "<group>"; };
 		826EAAD924038888008F31B5 /* Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Push.entitlements; sourceTree = "<group>"; };
 		826EAADA24038888008F31B5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		82BF269F2415D21100A9C78B /* PushService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushService.swift; sourceTree = "<group>"; };
 		DB07924B6002613480C62BB6 /* Pods-Push.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push.release.xcconfig"; path = "Target Support Files/Pods-Push/Pods-Push.release.xcconfig"; sourceTree = "<group>"; };
 		ED5D1D2893F3C825F6574703 /* Pods-Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push.debug.xcconfig"; path = "Target Support Files/Pods-Push/Pods-Push.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				826EAAD924038888008F31B5 /* Push.entitlements */,
+				82BF269E2415D19700A9C78B /* Services */,
 				826EAACF24036A42008F31B5 /* modules */,
 				826EAABB2403669B008F31B5 /* AppDelegate.swift */,
 				826EAABD2403669B008F31B5 /* SceneDelegate.swift */,
@@ -106,6 +109,14 @@
 				826EAAD724036A87008F31B5 /* PushScreenViewModel.swift */,
 			);
 			path = PushScreen;
+			sourceTree = "<group>";
+		};
+		82BF269E2415D19700A9C78B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82BF269F2415D21100A9C78B /* PushService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CB2E0E9AAC2C7A85FE0423D6 /* Pods */ = {
@@ -236,6 +247,7 @@
 				826EAAD624036A80008F31B5 /* PushScreenView.swift in Sources */,
 				826EAAD224036A72008F31B5 /* PushScreenProtocols.swift in Sources */,
 				826EAABC2403669B008F31B5 /* AppDelegate.swift in Sources */,
+				82BF26A02415D21100A9C78B /* PushService.swift in Sources */,
 				826EAABE2403669B008F31B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
